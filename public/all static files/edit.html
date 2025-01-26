@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Task</title>
+    <style>
+      /* General reset */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #333;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #333;
+      }
+
+      .edit-container {
+        background-color: #e3f2fd;
+        padding: 30px;
+        width: 100%;
+        max-width: 400px;
+        border-radius: 12px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        text-align: center;
+      }
+
+      .edit-container h2 {
+        margin-bottom: 20px;
+        font-size: 1.8rem;
+        color: #1e88e5;
+      }
+
+      input[type='text'] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        font-size: 1rem;
+        border: 1px solid #90caf9;
+        border-radius: 8px;
+        box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
+        transition: 0.3s;
+      }
+
+      input[type='text']:focus {
+        outline: none;
+        border-color: #42a5f5;
+        box-shadow: 0px 0px 5px #42a5f5;
+      }
+
+      button {
+        background-color: #1e88e5;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1rem;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #1565c0;
+      }
+
+      button:active {
+        transform: scale(0.98);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="edit-container">
+      <h2>Edit Task</h2>
+      <input type="text" id="task-name" placeholder="Edit your task name" />
+      <button id="update-button">Update</button>
+    </div>
+    <script src="edit.js"></script>
+  </body>
+</html>
